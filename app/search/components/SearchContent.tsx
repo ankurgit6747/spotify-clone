@@ -20,7 +20,7 @@ const SearchContent: React.FC<SearchContentProps> = ({
       <div 
         className="
           flex 
-          flex-col 
+          flex-col
           gap-y-2 
           w-full 
           px-6 
