@@ -9,6 +9,7 @@ import { AiFillStepBackward, AiFillStepForward } from 'react-icons/ai';
 import { HiSpeakerWave, HiSpeakerXMark } from "react-icons/hi2";
 import usePlayer from '@/hooks/usePlayer';
 import { useState } from 'react';
+import useSound from "use-sound";
 
 interface PlayerContentProps {
   song: Song;
@@ -53,7 +54,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
     player.setId(previousSong);
   }
 
-
+  const [play, {pouse, sound}] = useSound
 
   return (
     <div className='grid grid-cols-2 md:grid-cols-3 h-full'>
